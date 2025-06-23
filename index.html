@@ -1,0 +1,32 @@
+html:<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fitness Tracker</h1>
+        <div class="input-section">
+            <input type="number" id="steps" placeholder="Steps walked">
+            <input type="number" id="calories" placeholder="Calories burned">
+            <button onclick="addEntry()">Add Entry</button>
+        </div>
+        <ul id="entryList"></ul>
+        <h3>BMI Calculator</h3>
+        <input type="number" id="height" placeholder="Height (cm)">
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p id="bmiResult"></p>
+        <p id="quoteText"></p>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
