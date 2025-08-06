@@ -14,7 +14,7 @@ function addEntry() {
 
     if (steps && calories) {
         const listItem = document.createElement("li");
-        listItem.innerText = You walked ${steps} steps and burned ${calories} calories.;
+        listItem.innerText = `You walked ${steps} steps and burned ${calories} calories.`;
         document.getElementById("entryList").appendChild(listItem);
 
         document.getElementById("steps").value = "";
@@ -37,7 +37,7 @@ function calculateBMI() {
         else if (bmi < 30) status = "Overweight";
         else status = "Obese";
 
-        result.innerText = Your BMI is ${bmi} (${status});
+        result.innerText = `Your BMI is ${bmi} (${status})`;
     }
 }
 
